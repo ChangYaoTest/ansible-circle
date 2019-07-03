@@ -26,3 +26,5 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
             bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
+      
+      - run: bash <(curl -s https://scripts.scantist.com/ci-circle.sh)
